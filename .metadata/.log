@@ -1,0 +1,502 @@
+!SESSION 2026-03-10 20:47:39.943 -----------------------------------------------
+eclipse.buildId=4.38.0.202512192126
+java.version=25.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.springtools
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.springtools
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-10 20:47:43.204
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.springframework.boot.ide.branding 4 0 2026-03-10 20:47:43.563
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.boot.ide.branding [588]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.beans.ui.live 4 0 2026-03-10 20:47:43.567
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.beans.ui.live [589]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [614]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.platform
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.boot 4 0 2026-03-10 20:47:43.570
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot [590]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [614]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.frameworks.ui [611]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2026-03-10 20:47:43.572
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.dash [591]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot [590]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [614]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot.launch
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot.launch; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot.launch [593]
+         Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+           -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.boot.launch 4 0 2026-03-10 20:47:43.575
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.launch [593]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [614]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.platform
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot [590]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.frameworks.ui [611]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.boot.refactoring 4 0 2026-03-10 20:47:43.578
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.refactoring [594]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.editor.support
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.editor.support; bundle-version="5.0.1.202512191927"
+       org.springframework.ide.eclipse.editor.support [600]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.platform
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.ui [614]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.boot.restart 4 0 2026-03-10 20:47:43.581
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.restart [595]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot [590]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.platform
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.ui [614]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.frameworks.ui [611]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot.launch
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot.launch; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot.launch [593]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+           -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.boot.validation 4 0 2026-03-10 20:47:43.588
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.validation [596]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot [590]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.platform
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.ui [614]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.frameworks.ui [611]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.boot.wizard 4 0 2026-03-10 20:47:43.590
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.boot.wizard [597]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.frameworks.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.frameworks.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.frameworks.ui [611]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.ui [614]
+                Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+                  -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+                     org.springsource.ide.eclipse.commons.core [609]
+                       Unresolved requirement: Require-Bundle: org.eclipse.platform
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.editor.support
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.editor.support; bundle-version="5.0.1.202512191927"
+       org.springframework.ide.eclipse.editor.support [600]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot [590]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.buildship30 4 0 2026-03-10 20:47:43.594
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.buildship30 [598]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot.wizard
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot.wizard; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot.wizard [597]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.platform
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.boot; bundle-version="3.9.12"
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.boot; bundle-version="5.0.1.202512192126"; singleton:="true"
+       org.springframework.ide.eclipse.boot [590]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.editor.support 4 0 2026-03-10 20:47:43.595
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.editor.support [600]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [614]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.ide.eclipse.xml.namespaces 4 0 2026-03-10 20:47:43.598
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.xml.namespaces [603]
+  Unresolved requirement: Import-Package: org.springsource.ide.eclipse.commons.core.util
+    -> Export-Package: org.springsource.ide.eclipse.commons.core.util; bundle-symbolic-name="org.springsource.ide.eclipse.commons.core"; bundle-version="5.0.1.202512191927"; version="0.0.0"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+  Unresolved requirement: Import-Package: org.springsource.ide.eclipse.commons.core
+    -> Export-Package: org.springsource.ide.eclipse.commons.core; bundle-symbolic-name="org.springsource.ide.eclipse.commons.core"; bundle-version="5.0.1.202512191927"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-03-10 20:47:43.600
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.tooling.ls.eclipse.commons [606]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springframework.tooling.ls.eclipse.gotosymbol 4 0 2026-03-10 20:47:43.601
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.tooling.ls.eclipse.gotosymbol [607]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core; bundle-version="3.9.2"
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springsource.ide.eclipse.commons.core 4 0 2026-03-10 20:47:43.603
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.core [609]
+  Unresolved requirement: Require-Bundle: org.eclipse.platform
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.ui 4 0 2026-03-10 20:47:43.605
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.frameworks.ui [611]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.ui
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.ui; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.ui [614]
+         Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+           -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+              org.springsource.ide.eclipse.commons.core [609]
+                Unresolved requirement: Require-Bundle: org.eclipse.platform
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.springsource.ide.eclipse.commons.ui 4 0 2026-03-10 20:47:43.607
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.ui [614]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.core
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.core; bundle-version="5.0.1.202512191927"; singleton:="true"
+       org.springsource.ide.eclipse.commons.core [609]
+         Unresolved requirement: Require-Bundle: org.eclipse.platform
+
+	at org.eclipse.osgi.container.Module.start(Module.java:495)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2041)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.app 0 0 2026-03-10 20:47:43.660
+!MESSAGE Product org.springframework.boot.ide.branding.springtools could not be found.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-10 20:48:26.012
+!MESSAGE Logback config file: D:\Projects\ecommerce-microservices-main\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-03-10 20:48:31.207
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\durge'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2026-03-10 20:48:32.540
+!MESSAGE Failed to obtain 'WinDefend' service state
+!STACK 0
+java.io.IOException: Process timed-out and it was attempted to forcefully terminate it
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runProcess(WindowsDefenderConfigurator.java:395)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runPowershell(WindowsDefenderConfigurator.java:369)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.isWindowsDefenderServiceRunning(WindowsDefenderConfigurator.java:302)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.runExclusionCheck(WindowsDefenderConfigurator.java:159)
+	at org.eclipse.ui.internal.WindowsDefenderConfigurator.lambda$0(WindowsDefenderConfigurator.java:106)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:187)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
