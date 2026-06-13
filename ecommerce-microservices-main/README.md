@@ -7,7 +7,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.12-green.svg)
 ![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-2023.0.2-brightgreen.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 
 A production-ready e-commerce platform built with microservices architecture and the Saga pattern for distributed transaction management.
 
@@ -494,15 +494,12 @@ docker-compose down
 
 ---
 
-## 📄 License
-
-MIT License - see LICENSE file for details
-
----
-
 ## 👨‍💻 Author
 
-**Hacisimsek** - [@hacisimsek](https://github.com/hacisimsek)
+👨‍💻 **Durgeshkumar**
+
+GitHub:  
+https://github.com/Durgeshkumarddddd
 
 ---
 
